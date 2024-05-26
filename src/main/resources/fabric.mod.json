@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "compactedstuff",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "This mod aims to help new BTA modders.",
+  "authors": [
+    "Turnip Labs"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "MISSmyIDmods.compactedstuff.Compactedstuff"
+    ],
+		"beforeGameStart": [
+          "MISSmyIDmods.compactedstuff.Compactedstuff"
+		],
+		"afterGameStart": [
+          "MISSmyIDmods.compactedstuff.Compactedstuff"
+		],
+		"recipesReady": [
+          "MISSmyIDmods.compactedstuff.Compactedstuff"
+		]
+	},
+  "mixins": [
+		"packedstuff.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "~7.1",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
