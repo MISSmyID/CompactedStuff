@@ -32,7 +32,7 @@
 		]
 	},
   "mixins": [
-		"packedstuff.mixins.json"
+		"compactedstuff.mixins.json"
   ],
 
   "depends": {
