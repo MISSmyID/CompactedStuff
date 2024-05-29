@@ -3,7 +3,6 @@ package MISSmyIDmods.compactedstuff.block.entity;
 import MISSmyIDmods.compactedstuff.block.CompactedBlocks;
 import com.mojang.nbt.CompoundTag;
 import net.minecraft.core.entity.EntityFallingSand;
-import net.minecraft.core.util.helper.MathHelper;
 import net.minecraft.core.world.World;
 
 public class EntityCompactedGravel extends EntityFallingSand {
@@ -16,20 +15,6 @@ public class EntityCompactedGravel extends EntityFallingSand {
 		this.blocksBuilding = true;
 		this.setSize(0.98F, 0.98F);
 		this.heightOffset = this.bbHeight / 2.0F;
-	}
-
-	public EntityCompactedGravel(World world, double d, double d1, double d2, int i) {
-		this(world);
-		this.setPos(d, d1, d2);
-		this.blockID = CompactedBlocks.compactedSand.id;
-		float f = (float)(Math.random() * 3.1415927410125732 * 2.0);
-		this.xd = (double)(-MathHelper.sin(f * 3.141593F / 180.0F) * 0.02F);
-		this.yd = 0.20000000298023224;
-		this.zd = (double)(-MathHelper.cos(f * 3.141593F / 180.0F) * 0.02F);
-		this.fuse = 0;
-		this.xo = d;
-		this.yo = d1;
-		this.zo = d2;
 	}
 	protected void init() {
 	}
